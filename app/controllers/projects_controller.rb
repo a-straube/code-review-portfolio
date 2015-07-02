@@ -1,11 +1,11 @@
 class ProjectsController < ApplicationController
-  def show
-    @project = Project.find(params[:id])
-  end
-
   def new
     @skill = Skill.find(params[:skill_id])
     @project = @skill.projects.new
+  end
+  
+  def show
+    @project = Project.find(params[:id])
   end
 
   def create
@@ -41,6 +41,6 @@ class ProjectsController < ApplicationController
 
   private
   def project_params
-    params.require(:project).permit(:name, :description, :git_url)
+    params.require(:project).permit(:name, :description, :git_url, :skill_id)
   end
 end
