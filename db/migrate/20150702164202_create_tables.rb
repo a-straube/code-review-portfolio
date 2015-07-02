@@ -8,10 +8,7 @@ class CreateTables < ActiveRecord::Migration
       t.string :name
       t.string :description
       t.string :git_url
-    end
-    create_table :projects_skills, id: false do |t|
-      t.belongs_to :project, index: true
-      t.belongs_to :skill, index: true
+      t.integer :skill_id
     end
   end
 end

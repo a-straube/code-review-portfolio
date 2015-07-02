@@ -17,18 +17,11 @@ ActiveRecord::Schema.define(version: 20150702164202) do
   enable_extension "plpgsql"
 
   create_table "projects", force: :cascade do |t|
-    t.string "name"
-    t.string "description"
-    t.string "git_url"
-  end
-
-  create_table "projects_skills", id: false, force: :cascade do |t|
-    t.integer "project_id"
+    t.string  "name"
+    t.string  "description"
+    t.string  "git_url"
     t.integer "skill_id"
   end
-
-  add_index "projects_skills", ["project_id"], name: "index_projects_skills_on_project_id", using: :btree
-  add_index "projects_skills", ["skill_id"], name: "index_projects_skills_on_skill_id", using: :btree
 
   create_table "skills", force: :cascade do |t|
     t.string "name"
