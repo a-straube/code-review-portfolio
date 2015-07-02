@@ -1,3 +1,18 @@
-<h1><%= @skill.name %></h1>
+<div class = "col-md-6">
+  <h1><u><%= @skill.name %></u></h1>
 
-<h4><%= @skill.description %></h4>
+  <h4><%= @skill.description %></h4>
+</div>
+
+<div class = "col-md-6">
+  <h2>Projects created using <%= @skill.name %>:</h2>
+    <% if @skill.projects.any? %>
+      <% @skill.projects.each do |project| %>
+      <ul>
+        <li><%= link_to project.name, project_path(project) %></li>
+      </ul>
+      <% end %>
+    <% else %>
+      <p>No projects have been added for this skill yet. Check back soon!</p>
+    <% end %>
+</div>
