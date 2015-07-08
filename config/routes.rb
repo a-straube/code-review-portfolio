@@ -2,6 +2,6 @@ Rails.application.routes.draw do
   root :to => 'skills#index'
 
   resources :skills do
-    resources :projets
+    resources :projects
   end
 end
