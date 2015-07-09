@@ -1,4 +1,4 @@
-<div class = "col-md-6">
+<div class = "col-md-4">
   <h1><u><%= @skill.name %></u></h1>
 
   <h4><%= @skill.description %></h4>
@@ -9,12 +9,12 @@
                                                         :method => "delete"} %></p>
 </div>
 
-<div class = "col-md-6">
+<div class = "col-md-8">
   <h2>Projects created using <%= @skill.name %>:</h2>
     <% if @skill.projects.any? %>
       <% @skill.projects.each do |project| %>
       <ul>
-        <li><%= link_to project.name, project_path(project) %></li>
+        <li><%= link_to project.name, skill_project_path(@skill, project) %></li>
       </ul>
       <% end %>
     <% else %>
