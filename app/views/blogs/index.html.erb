@@ -1,0 +1,10 @@
+<h1>Blog</h1>
+
+<ul>
+  <% @blogs.each do |blog| %>
+    <p><%= blog.title %></p>
+    <p><%= blog.created_at %></p>
+  <% end %>
+</ul>
+
+<p><%= link_to "Add A New Blog Entry", new_blog_path %></p>

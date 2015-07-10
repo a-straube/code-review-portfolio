@@ -7,12 +7,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div id="cssmenu">
-    <a href="<%= skills_path %>">Home</a>
+  <div id="fauxnavbar">
+    <a href="<%= blogs_path %>">Home</a>  |
+    <a href="<%= skills_path %>">Coding Skills</a>
   </div>
-  
-  <div class="container">
-    <%= yield %>
+
+  <div id="bodytoppadding">
+    <div class="container">
+      <%= yield %>
+    </div>
   </div>
 
 </body>

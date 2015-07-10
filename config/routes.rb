@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root :to => 'skills#index'
+  root :to => 'blogs#index'
 
   resources :skills do
     resources :projects
