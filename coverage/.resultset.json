@@ -245,9 +245,38 @@
         1,
         1,
         null,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/axelstraube/Documents/work/code-review-portfolio/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/axelstraube/Documents/work/code-review-portfolio/spec/models/blog_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        null
+      ],
+      "/Users/axelstraube/Documents/work/code-review-portfolio/app/models/blog.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/axelstraube/Documents/work/code-review-portfolio/spec/models/comment_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        null
+      ],
+      "/Users/axelstraube/Documents/work/code-review-portfolio/app/models/comment.rb": [
+        1,
+        1,
+        null,
         1,
         null
       ],
@@ -342,6 +371,6 @@
         null
       ]
     },
-    "timestamp": 1436544413
+    "timestamp": 1436556003
   }
 }

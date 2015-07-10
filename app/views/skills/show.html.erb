@@ -3,13 +3,15 @@
 
   <h4><%= @skill.description %></h4>
 
-  <p><%= link_to "Admin Only - Edit Skill", edit_skill_path(@skill) %></p>
-  <p><%= link_to "Admin Only - Delete Skill", skill_path(@skill),
+  <p><%= link_to "Edit Skill", edit_skill_path(@skill) %> |
+    <%= link_to "Delete Skill", skill_path(@skill),
                                               :data => {:confirm => "Are you sure you want to remove this skill?",
-                                                        :method => "delete"} %></p>
+                                                        :method => "delete"} %>
+  </p>
 </div>
 
 <div class = "col-md-8">
+  <br>
   <h2>Projects created using <%= @skill.name %>:</h2>
 
     <!-- Notice appears after successfully adding new project. -->
@@ -29,5 +31,5 @@
       <p>No projects have been added for this skill yet. Check back soon!</p>
     <% end %>
 
-  <p><%= link_to "Admin Only - Add A Project", new_skill_project_path(@skill) %></p>
+  <p><%= link_to "Add A Project", new_skill_project_path(@skill) %></p>
 </div>
