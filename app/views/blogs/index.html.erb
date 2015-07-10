@@ -2,7 +2,7 @@
 
 <ul>
   <% @blogs.each do |blog| %>
-    <p><%= blog.title %></p>
+    <p><strong><a href="<%= blog_path(blog) %>"><%= blog.title %></a></strong></p>
     <p><%= blog.created_at %></p>
   <% end %>
 </ul>
