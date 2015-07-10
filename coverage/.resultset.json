@@ -1,11 +1,11 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/axelstraube/Documents/work/code-review-portfolio/spec/models/project_spec.rb": [
+      "/Users/axelstraube/Documents/work/code-review-portfolio/spec/features/add_skill_pages_spec.rb": [
         1,
         null,
         1,
-        2,
+        1,
         1,
         1,
         1,
@@ -16,6 +16,7 @@
       ],
       "/Users/axelstraube/Documents/work/code-review-portfolio/spec/rails_helper.rb": [
         null,
+        1,
         1,
         1,
         1,
@@ -250,6 +251,19 @@
         1,
         null
       ],
+      "/Users/axelstraube/Documents/work/code-review-portfolio/spec/models/project_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/axelstraube/Documents/work/code-review-portfolio/app/models/project.rb": [
         1,
         1,
@@ -270,8 +284,64 @@
         null,
         1,
         null
+      ],
+      "/Users/axelstraube/Documents/work/code-review-portfolio/app/controllers/skills_controller.rb": [
+        1,
+        1,
+        2,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/axelstraube/Documents/work/code-review-portfolio/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        null
       ]
     },
-    "timestamp": 1436543771
+    "timestamp": 1436544413
   }
 }
