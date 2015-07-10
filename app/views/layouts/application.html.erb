@@ -7,8 +7,11 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<%= link_to "Home", skills_path %>
-<%= yield %>
+  <div id="cssmenu">
+    <a href="<%= skills_path %>">Home</a>
+  </div>
+
+  <%= yield %>
 
 </body>
 </html>
