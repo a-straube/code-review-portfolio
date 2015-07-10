@@ -6,6 +6,12 @@
         null,
         1,
         2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/axelstraube/Documents/work/code-review-portfolio/spec/rails_helper.rb": [
@@ -266,6 +272,6 @@
         null
       ]
     },
-    "timestamp": 1436513406
+    "timestamp": 1436543771
   }
 }
