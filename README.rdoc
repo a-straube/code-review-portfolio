@@ -10,12 +10,17 @@ When signing up, receiving error message saying username cannot be blank regardl
 Setup:
 Run the following commands:
 > git clone https://github.com/a-straube/code-review-portfolio.git
+
 > bundle
+
 > postgres
+
 > rake db:create
+
 > rake db:migrate
+
 > rails s
 
 Navigate to localhost:3000 using a web browser.
 
-MIT Copyright (c) 2015 Copyright Holder All Rights Reserved.
+MIT Copyright (c) 2015 Axel Straube All Rights Reserved.
