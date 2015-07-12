@@ -1,28 +1,21 @@
-== README
+Epicodus Code Review Portfolio
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+By Axel Straube
 
-Things you may want to cover:
+Link to heroku: https://limitless-meadow-6878.herokuapp.com/
 
-* Ruby version
+Current bugs:
+When signing up, receiving error message saying username cannot be blank regardless of weather field is filled in.
 
-* System dependencies
+Setup:
+Run the following commands:
+> git clone https://github.com/a-straube/code-review-portfolio.git
+> bundle
+> postgres
+> rake db:create
+> rake db:migrate
+> rails s
 
-* Configuration
+Navigate to localhost:3000 using a web browser.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+MIT Copyright (c) 2015 Copyright Holder All Rights Reserved.
