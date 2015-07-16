@@ -525,6 +525,8 @@
         null,
         1,
         null,
+        null,
+        1,
         null
       ],
       "/Users/axelstraube/Documents/work/code-review-portfolio/app/helpers/application_helper.rb": [
@@ -657,6 +659,6 @@
         null
       ]
     },
-    "timestamp": 1436570111
+    "timestamp": 1436740313
   }
 }

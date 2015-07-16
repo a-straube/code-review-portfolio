@@ -9,6 +9,7 @@ When signing up, receiving error message saying username cannot be blank regardl
 
 Setup:
 Run the following commands:
+
 > git clone https://github.com/a-straube/code-review-portfolio.git
 
 > bundle
