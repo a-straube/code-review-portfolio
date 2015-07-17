@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
-  root :to => 'references#index'
+  get '/' => 'home#index'
+  root :to => 'home#index'
 
   resources :skills do
     resources :projects
@@ -9,4 +10,5 @@ Rails.application.routes.draw do
     resources :comments
   end
   resources :references
+  resources :users
 end

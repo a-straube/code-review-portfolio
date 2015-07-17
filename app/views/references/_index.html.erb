@@ -1,0 +1,13 @@
+<% if @references.any? %>
+  <% @references.each do |reference| %>
+      <ul>
+        <p><%= reference.title %></p>
+        <p><%= reference.description %></p>
+      </ul>
+  <% end %>
+<% else %>
+  <p>No references have been added yet!</p>
+<% end %>
+
+<%= link_to "Add Reference", new_reference_path %>  |
+<%= link_to "Close References", root_path %>
