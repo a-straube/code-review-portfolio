@@ -3,6 +3,25 @@ class ReferencesController < ApplicationController
     @references = Reference.all
   end
 
+  def new
+    @reference = Reference.new
+  end
+
   def create
+    @reference = Reference.new(reference_params)
+    # if @reference.save
+    #   flash[:notice] = "Reference successfully added!"
+      respond_to do |format|
+        format.html { redirect_to root_path }
+        format.js
+      end
+    # else
+    #   render :new
+    # end
+  end
+
+  private
+  def reference_params
+    params.require(:reference).permit(:title, :description)
   end
 end

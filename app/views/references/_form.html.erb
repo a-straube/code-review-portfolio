@@ -1,6 +1,6 @@
 <%= render "layouts/errors", :object => @reference %>
 
-<%= form_for @reference do |f| %>
+<%= form_for @reference, remote: true do |f| %>
   <p><%= f.label :title %></p>
   <p><%= f.text_field :title %></p>
   <p><%= f.label :description %></p>

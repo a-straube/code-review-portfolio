@@ -1,8 +1,10 @@
 <% if @references.any? %>
+  <h3><i>References</i></h3>
   <% @references.each do |reference| %>
       <ul>
-        <p><%= reference.title %></p>
+        <h4><%= reference.title %></h4>
         <p><%= reference.description %></p>
+        <hr>
       </ul>
   <% end %>
 <% else %>
