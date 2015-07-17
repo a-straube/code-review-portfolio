@@ -1,9 +1,19 @@
 class ProjectsController < ApplicationController
   def new
     @skill = Skill.find(params[:skill_id])
-    @project = @skill.projects.new
+    if current_user
+      if current_user.admin?
+        @project = @skill.projects.new
+      else
+        flash[:notice] = "You must be an administrator to add a project!"
+        redirect_to skill_path(@skill)
+      end
+    else
+      flash[:notice] = "You must be logged in and an administrator to add a project!"
+      redirect_to skill_path(@skill)
+    end
   end
-  
+
   def show
     @project = Project.find(params[:id])
   end
@@ -20,8 +30,18 @@ class ProjectsController < ApplicationController
   end
 
   def edit
-    @skill = Skill.find(params[:skill_id])
-    @project = Project.find(params[:id])
+    if current_user
+      if current_user.admin?
+        @skill = Skill.find(params[:skill_id])
+        @project = Project.find(params[:id])
+      else
+        flash[:notice] = "You must be an administrator to edit a project!"
+        redirect_to skill_path(@skill)
+      end
+    else
+      flash[:notice] = "You must be logged in and an administrator to edit a project!"
+      redirect_to skill_path(@skill)
+    end
   end
 
   def update
