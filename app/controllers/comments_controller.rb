@@ -8,9 +8,12 @@ class CommentsController < ApplicationController
     @blog = Blog.find(params[:blog_id])
     @comment = @blog.comments.new(comment_params)
     if @comment.save
-      redirect_to blog_path(@comment.blog)
+      respond_to do |format|
+        format.html { redirect_to blog_path(@comment.blog) }
+        format.js
+      end
     else
-      render :new
+      redirect_to :new
     end
   end
 
@@ -36,6 +39,6 @@ class CommentsController < ApplicationController
 
   private
   def comment_params
-    params.require(:comment).permit(:comment, :skill_id)
+    params.require(:comment).permit(:comment, :blog_id)
   end
 end
