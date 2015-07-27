@@ -9,14 +9,10 @@
 <div class="col-md-5">
   <br>
   <h2>Comments</h2>
-    <% if @blog.comments.any? %>
-      <ul class="comments_list">
-        <% @comments.each do |x| %>
-          <%= render 'comments/comment', comment: x %>
-        <% end %>
-      </ul>
-    <% else %>
-      <h4>There are no comments for this blog entry yet!</h4>
-    <% end %>
+    <ul class="comments_list">
+      <% @comments.each do |x| %>
+        <%= render 'comments/comment', comment: x %>
+      <% end %>
+    </ul>
   <%= link_to "Add a comment", new_blog_comment_path(@blog), class: "add_comment", remote: true %>
 </div>
