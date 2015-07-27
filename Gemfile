@@ -27,4 +27,5 @@ group :test do
   gem 'capybara'
   gem 'pry'
   gem 'simplecov', require: false
+  gem 'poltergeist'
 end

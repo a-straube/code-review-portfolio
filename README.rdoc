@@ -4,9 +4,6 @@ By Axel Straube
 
 Link to heroku: https://limitless-meadow-6878.herokuapp.com/
 
-Current bugs:
-When signing up, receiving error message saying username cannot be blank regardless of weather field is filled in.
-
 Setup:
 Run the following commands:
 
